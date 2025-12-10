@@ -114,7 +114,7 @@ body {
         gap: 12px;
         padding: 10px 12px;
         border-radius: 8px;
-        color: var(--text-secondary);
+        color: #343434;
         text-decoration: none;
         transition: background var(--transition), color var(--transition);
 
@@ -135,7 +135,7 @@ body {
             height: 36px;
             border-radius: 8px;
             display: inline-flex;
-            align-items: center;
+            align-items: center;    border: 1px solid #ddd;
             justify-content: center;
             background: rgba(0, 0, 0, 0.03);
         }
@@ -274,6 +274,12 @@ body {
                 justify-content: center;
                 font-weight: 700;
             }
+
+            .user-name {
+                font-weight: 700;
+                    margin-bottom: -5px;
+                color: var(--text-primary);
+            }
         }
     }
 
@@ -326,9 +332,6 @@ body {
                         object-fit: cover;
                     }
                 }
-
-           
-
             }
         }
     }
