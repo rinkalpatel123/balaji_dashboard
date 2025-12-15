@@ -249,6 +249,9 @@ body {
   margin-bottom: -5px;
   color: var(--text-primary);
 }
+.main .topbar .actions .dropdown-toggle::after {
+  display: none;
+}
 .main .content {
   padding: 18px;
   overflow: auto;
@@ -296,13 +299,24 @@ body {
      object-fit: cover;
 }
 
-.login-page .header {
-  padding: 20px 0;
+.login-page .login-container {
+  min-height: calc(100vh - 120px);
+  /* adjust if header height changes */
+  padding: 20px;
+  position: relative;
+  z-index: 999;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .login-page .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.login-page .header {
+  padding: 20px 0;
 }
 .login-page .logo {
   width: 50px;
@@ -327,15 +341,6 @@ body {
   color: var(--text-secondary);
   margin-top: 10px;
   font-size: 18px;
-}
-.login-page .login-container {
-  position: relative;
-  z-index: 999;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
 }
 .login-page .login-card {
   background-color: var(--card-bg);
